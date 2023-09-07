@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jawahirul Wildan</title>
+    <style>
+      * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            min-width: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            background-color: #0a66c2;
+        }
+
+        main {
+            width: 100%;
+            max-width: 1080px;
+            padding: 2rem 1rem;
+            border: solid 0.25rem #84b2e0;
+            border-radius: 0.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            background-color: #e6eff8;  
+            color: #333;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .profile__img {
+            width: 9rem;
+            height: 9rem;
+            flex-shrink: 0;
+        }
+
+        .profile__img > img {
+            width: 100%;
+            height: 100%;
+            border-radius: 0.25rem;
+            box-shadow: 0 0 0.5rem #095bae;
+            object-fit: cover;
+        }
+
+        .profile__about {
+            padding: 0rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 0.5rem;
+        }
+
+        .profile__about-contacts {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .profile__about-contacts > a{
+            color:black;
+        }
+
+        .profile__about-contacts > a:hover {
+            color:#0a66c2;
+            /* text-decoration-color: #095bae; */
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .section-header {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .section-header hr {
+            border-color: black;
+        }
+
+        .section-items {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .section-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            padding: 0 1rem;
+        }
+
+        .section-item__header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section-item__title {
+            max-width: 45%;
+            font-weight: bold;
+        }
+
+        .section-item__title > span {
+            font-weight: normal;
+            color: slategray;
+        }
+
+        .section-item__role {
+            font-style: italic;
+        }
+
+        .section-item__descs {
+            padding-left: 1rem;
+        }
+
+        .section-item__desc {
+            line-height: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="profile">
+            <div class="profile__img">
+            <img
+                src="foto.jpg"
+                alt="Foto Profil"
+            >
+            </div>
+            <div class="profile__about">
+            <h1>Jawahirul Wildan</h1>
+            <div class="profile__about-contacts">
+                <a href="https://wa.me/+6285852601479" target="_blank">+6285852601479</a>
+                <p>|</p>
+                <a href="mailto:jawahirulwildan@gmail.com" target="_blank">jawahirulwildan@gmail.com</a>
+                <p>|</p>
+                <a href="https://www.linkedin.com/in/jawahirul-wildan-945ba4252/" target="_blank">linkedin.com/in/jawahirulwildan</a>
+            </div>
+                <p class="profile__about-caption">
+                    Saat ini saya sedang menempuh Pendidikan sarjana di Institut Teknologi 
+                    Sepuluh Nopember jurusan Teknik Informatika. Sebagai seorang mahasiswa semester 5, saya 
+                    selalu giat dan pantang menyerah dalam belajar. Saya memiliki minat berkarir sebagai Data 
+                    Scientist dan juga Full Stack Web Developer
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h1>Pendidikan</h1>
+                <hr/>
+            </div>
+            <div class="section-items">
+                <div class="section-item">
+                    <div class="section-item__header">
+                        <p class="section-item__title">
+                            Institut Teknologi Sepuluh Nopember
+                            <span>- Surabaya, Indonesia</span>
+                        </p>
+                        <p class="section-item__date">2021 - Sekarang</p>
+                    </div>
+                    <p class="section-item__role">
+                        S1 Teknik Informatika
+                    </p>
+                </div>
+
+                <div class="section-item">
+                    <div class="section-item__header">
+                        <p class="section-item__title">
+                            SMA Negeri 1 Sumenep
+                            <span>- Sumenep, Indonesia</span>
+                        </p>
+                        <p class="section-item__date">2018 - 2021</p>
+                    </div>
+                        <p class="section-item__role">
+                            S1 Teknik Informatika
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h1>Pengalaman Organisasi</h1>
+                <hr />
+            </div>
+            <div class="section-items">
+                <div class="section-item">
+                    <div class="section-item__header">
+                        <p class="section-item__title">
+                            Fokus ITS
+                        </p>
+                        <p class="section-item__date">2021 - Sekarang</p>
+                    </div>
+                    <p class="section-item__role">
+                        Staff Media Informasi
+                    </p>
+                    <ul class="section-item__descs">
+                        <li class="section-item__desc">
+                            Memberikan ide dan masukan tentang sebuah konten
+                        </li>
+                        <li class="section-item__desc">
+                            Membuat konten untuk feed instagram
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h1>Pengalaman Kepanitiaan</h1>
+                <hr />
+            </div>
+            <div class="section-items">
+                <div class="section-item">
+                    <div class="section-item__header">
+                        <p class="section-item__title">
+                            Ini Lho ITS Forda
+                        </p>
+                        <p class="section-item__date">2022</p>
+                    </div>
+                    <p class="section-item__role">Staff Divisi IT & Pubdok</p>
+                    <ul class="section-item__descs">
+                        <li class="section-item__desc">
+                            Melakukan dokumentasi berupa foto dan video di seluruh sesi acara
+                        </li>
+                        <li class="section-item__desc">
+                            Mengonsep dan membuat poster acara welcome (Try Out)
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section-item">
+                    <div class="section-item__header">
+                        <p class="section-item__title">
+                            Schematics ITS 2022
+                        </p>
+                        <p class="section-item__date">2022</p>
+                    </div>
+                    <p class="section-item__role">Staff Materi Schematics NST</p>
+                    <ul class="section-item__descs">
+                        <li class="section-item__desc">
+                            Membantu dalam menyusun TOR (Term of Reference)
+                        </li>
+                        <li class="section-item__desc">
+                            Membantu dalam menyusun script video abstraksi
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section-item">
+                    <div class="section-item__header">
+                        <p class="section-item__title">
+                            Ini Lho ITS 
+                        </p>
+                        <p class="section-item__date">2023</p>
+                    </div>
+                    <p class="section-item__role">Staff Security, Facilitator, and Surveillance</p>
+                    <ul class="section-item__descs">
+                        <li class="section-item__desc">
+                            Membantu melakukan survei serta perizinan venue
+                        </li>
+                        <li class="section-item__desc">
+                            Mengamankan venue mulai dari pra acara hingga acara selesai
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section-item">
+                    <div class="section-item__header">
+                        <p class="section-item__title">
+                            Fokus Expo 2023
+                        </p>
+                        <p class="section-item__date">2023</p>
+                    </div>
+                    <p class="section-item__role">Staff Ahli Creative</p>
+                    <ul class="section-item__descs">
+                        <li class="section-item__desc">
+                            Membuat rancangan konsep dekorasi acara Fokus Expo 2023
+                        </li>
+                        <li class="section-item__desc">
+                            Membuat layouting dekorasi pada gedung acara
+                        </li>
+                        <li class="section-item__desc">
+                            Membuat dekorasi sesuai dengan konsep yang ditentukan
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section-item">
+                    <div class="section-item__header">
+                        <p class="section-item__title">
+                            Schematics ITS 2023
+                        </p>
+                        <p class="section-item__date">2023 - Sekarang</p>
+                    </div>
+                    <p class="section-item__role">Staff Ahli Bootcamp Schematics BST</p>
+                    <ul class="section-item__descs">
+                        <li class="section-item__desc">
+                            Bertanggung jawab atas segala kebutuhan acara Bootcamp
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
